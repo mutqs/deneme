@@ -1,0 +1,6 @@
+.container .card {
+   margin: 1rem;
+   display: flex;
+   direction: column;
+  align-items: center;
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family:  'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+body {
+    background: url("/entry/img/indir.jpg") top center fixed  ;
+    background-size : cover ;
+    margin:12rem ;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.container .card {
+    border-radius : 20px ;
+}
+
+.container h3  {
+    text-align: center;         
+}

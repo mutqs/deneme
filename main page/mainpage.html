@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" keywords="test">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <title>Test Project From mutqs</title>
+
+    <title>Document</title>
+
+    <link rel="stylesheet" media="(max-width:768px)" href="/main page/css/tablet.css">
+    <link rel="stylesheet" href="/main page/css/main.css">
+
+
+</head>
+
+<body>
+    <!-- NavBar -->
+    <ul class="navbar nav-pills border-bottom">
+        <li class="nav-item dropdown">
+            <!-- Spor -->
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Spor </a>
+            <div class="dropdown-menu ">
+                <a href="https://www.mackolik.com/" target="_blank"
+                    class="dropdown-item d-flex align-items-center justify-content-between "> Maçkolik
+                    <span>
+                        <img src="/main page/img/mackolik.png" alt="mackolik">
+                    </span>
+                    <a href="https://www.sporx.com/" target="_blank"
+                        class="dropdown-item d-flex align-items-center justify-content-between "> Sporx
+                        <span>
+                            <img src="/main page/img/sporx.jpg" alt="sporx">
+                        </span>
+                        <a href="https://tr.beinsports.com/" target="_blank"
+                            class="dropdown-item d-flex align-items-center justify-content-between "> Bein Sports
+                            <span>
+                                <img src="/main page/img/bein.jpg" alt="bein">
+                            </span>
+                            <a href="https://www.trtspor.com.tr/" target="_blank"
+                                class="dropdown-item d-flex align-items-center justify-content-between "> Trt Spor
+                                <span>
+                                    <img src="/main page/img/trt.jpg" alt="trt">
+                                </span>
+                            </a>
+            </div>
+        </li>
+        <!-- Kültür&Sanat -->
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Kültür&Sanat </a>
+            <div class="dropdown-menu">
+                <a href="https://www.imdb.com/" target="_blank"
+                    class="dropdown-item d-flex align-items-center justify-content-between "> IMDb
+                    <span>
+                        <img src="img/imdb.jpg" alt="imdb">
+                    </span>
+                </a>
+                <a href="https://www.ultimate-guitar.com/" target="_blank"
+                    class="dropdown-item d-flex align-items-center justify-content-between "> Ult. Guitar
+                    <span>
+                        <img src="/main page/img/ultimate.png" alt="ultimate">
+                    </span>
+                </a>
+                <a href="https://eksisozluk.com/" target="_blank"
+                    class="dropdown-item d-flex align-items-center justify-content-between "> Ekşi Sözlük
+                    <span>
+                        <img src="/main page/img/eksi.png" alt="eksi">
+                    </span>
+                </a>
+                <a href="https://www.youtube.com/watch?v=C5VldFj5Bwg" target="_blank"
+                    class="dropdown-item d-flex align-items-center justify-content-between "> Youtube
+                    <span>
+                        <img src="/main page/img/utube.png" alt="youtube">
+                    </span>
+                </a>
+            </div>
+        </li>
+        <!-- Youtube araması  -->
+        <li class="nav-item" >
+            <div class="youtubeForm d-flex justify-content-start mt-2">
+                <input type="text" class="form-control bg-danger " name="filter1" id="filter1"
+                    placeholder="Youtube araması..">
+                <button type="submit" class="btn btn-dark ml-2"  id="btn-youtube" target="_blank"> Ara </button>
+                <!-- <a href="https://www.youtube.com" type="submit" class="btn btn-dark ml-2"  id="btn-youtube" target="_blank" > Ara</a> -->
+            </div>
+        </li>
+    </ul>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col col-5">
+                <div class="card">
+                    <div class="card-header bg-primary" style="color: white; text-align: center; "> Döviz Kuru Hesaplama
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <form id="currency-form">
+                                <div class="input-field col-6 mb-4">
+                                    <input type="number" name="amount" id="amount" placeholder="Miktar Giriniz.."
+                                        style="border-radius: 4px; align-self: center;">
+                                </div>
+                                <div class="input-select ml-4" id="input-select">
+                                    <select id="firstCurrency">
+
+                                        <option selected>USD</option>
+                                        <option>EUR</option>
+                                        <option>JPY</option>
+                                        <option>BGN</option>
+                                        <option>CZK</option>
+                                        <option>DKK</option>
+                                        <option>GBP</option>
+                                        <option>HUF</option>
+                                        <option>PLN</option>
+                                        <option>RON</option>
+                                        <option>SEK</option>
+                                        <option>CHF</option>
+                                        <option>ISK</option>
+                                        <option>NOK</option>
+                                        <option>HRK</option>
+                                        <option>RUB</option>
+                                        <option>TRY</option>
+                                        <option>AUD</option>
+                                        <option>BRL</option>
+                                        <option>CAD</option>
+                                        <option>CNY</option>
+                                        <option>HKD</option>
+                                        <option>IDR</option>
+                                        <option>ILS</option>
+                                        <option>INR</option>
+                                        <option>KRW</option>
+                                        <option>MXN</option>
+                                        <option>MYR</option>
+                                        <option>NZD</option>
+                                        <option>PHP</option>
+                                        <option>SGD</option>
+                                        <option>THB</option>
+                                        <option>ZAR</option>
+                                    </select>
+
+                                    <select id="secondCurrency" style=" border-radius: 4px;">
+
+                                        <option>USD</option>
+                                        <option>EUR</option>
+                                        <option>JPY</option>
+                                        <option>BGN</option>
+                                        <option>CZK</option>
+                                        <option>DKK</option>
+                                        <option>GBP</option>
+                                        <option>HUF</option>
+                                        <option>PLN</option>
+                                        <option>RON</option>
+                                        <option>SEK</option>
+                                        <option>CHF</option>
+                                        <option>ISK</option>
+                                        <option>NOK</option>
+                                        <option>HRK</option>
+                                        <option>RUB</option>
+                                        <option selected>TRY</option>
+                                        <option>AUD</option>
+                                        <option>BRL</option>
+                                        <option>CAD</option>
+                                        <option>CNY</option>
+                                        <option>HKD</option>
+                                        <option>IDR</option>
+                                        <option>ILS</option>
+                                        <option>INR</option>
+                                        <option>KRW</option>
+                                        <option>MXN</option>
+                                        <option>MYR</option>
+                                        <option>NZD</option>
+                                        <option>PHP</option>
+                                        <option>SGD</option>
+                                        <option>THB</option>
+                                        <option>ZAR</option>
+                                    </select>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card-body bg-primary" style="color: white;
+                            border-radius: 4px;
+                            text-align: center;
+                        ">
+                        <span class="card-title" id="outputFirst">USD</span>
+                        <span>-</span>
+                        <span class="card-title" id="outputSecond">TRY</span>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-content">
+                            <input type="text" style="border-radius: 4px ;" name="outputResult" id="outputResult"
+                                placeholder="Sonuç" readonly>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- To Do List  -->
+
+            <div class="card col col-6 ml-5" style="width:50em;">
+                <div class="card-header bg-dark" style="align-items: center;"> Yapılacaklar Listesi</div>
+                <hr>
+                <div class="card-body">
+                    <form id="todo-form">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input class="form-control" name="todo" id="todo"
+                                    placeholder="Yapılacak bir şey yazınız.." style="width:15em ">
+                                <br>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary"> To Do Ekle</button>
+                    </form>
+                </div>
+                <hr>
+                <div class="card-body">
+                    <h5 class="card-title" id="tasks-title">To-do'lar</h5>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" name="filter" id="filter"
+                                placeholder="Bir todo arayınız..">
+                        </div>
+                    </div>
+                    <hr>
+                    <ul class="list-group">
+                        <!-- Todo Listesi -->
+                    </ul>
+                    <hr>
+                    <a href="#" id="clear-todos" class="clear-todos btn btn-dark"> Bütün Todoları Temizle </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+        <script src="/main page/exchange-js/ui.js"></script>
+        <script src="/main page/exchange-js/currency.js"></script>
+        <script src="/main page/exchange-js/app.js"></script>
+
+        
+        <script src="/main page/todo.js"></script>
+        <script src="/main page/session.js"></script>
+        <script src="/main page/youtube.js"></script>
+        <!-- Boostrap Js  -->
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
